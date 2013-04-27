@@ -3,4 +3,4 @@
 -lib utest
 -neko test.n
 --macro include('tests.issues')
-#--macro include('tests.unit')
+--macro include('tests.unit')
