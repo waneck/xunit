@@ -12,6 +12,16 @@
 -main TestAll
 -lib utest
 -D dump
+-cs bin/cs
+-debug
+--macro include('tests.issues')
+--macro include('tests.unit')
+
+--next
+-cp src
+-main TestAll
+-lib utest
+-D dump
 -neko bin/neko.n
 -debug
 --macro include('tests.issues')
