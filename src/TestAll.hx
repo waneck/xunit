@@ -8,7 +8,6 @@ import utest.TestResult;
 	{
 		var runner = new Runner();
 
-		trace(haxe.rtti.Meta.getType(TestAll));
 		for (test in haxe.rtti.Meta.getType(TestAll).tests)
 		{
 			runner.addCase(Type.createInstance(Type.resolveClass(test), []));

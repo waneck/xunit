@@ -1,7 +1,6 @@
 package tests.issues;
 import utest.Assert;
 
-@:skip
 class Issue1576 extends Test
 {
 	public function testIssue()
