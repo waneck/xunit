@@ -1,6 +1,18 @@
 -cp src
 -main TestAll
 -lib utest
--neko test.n
+-D dump
+-java bin/java
+-debug
+--macro include('tests.issues')
+--macro include('tests.unit')
+
+--next
+-cp src
+-main TestAll
+-lib utest
+-D dump
+-neko bin/neko.n
+-debug
 --macro include('tests.issues')
 --macro include('tests.unit')
