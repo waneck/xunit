@@ -12,6 +12,7 @@
 -main TestAll
 -lib utest
 -D dump
+-D real_position
 -cs bin/cs
 -debug
 --macro include('tests.issues')
