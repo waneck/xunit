@@ -5,9 +5,10 @@ import utest.Assert;
 	This test will mainly test the correct target representation of various scenarios where a class
 	implement a generic interface
 **/
+@:skip
 class TestGenericsImplementation extends Test
 {
-
+#if false
 	public function testCompiling()
 	{
 		var ng2 = new NG2();
@@ -334,4 +335,5 @@ private class G3<D> extends G2<D,Int> implements ING3
 
 private class NG5 extends G3<String>
 {
+#end
 }
