@@ -2,6 +2,16 @@
 -main TestAll
 -lib utest
 -D dump
+-neko bin/neko.n
+-debug
+--macro include('tests.issues')
+--macro include('tests.unit')
+
+--next
+-cp src
+-main TestAll
+-lib utest
+-D dump
 -java bin/java
 -debug
 --macro include('tests.issues')
@@ -14,16 +24,6 @@
 -D dump
 -D real_position
 -cs bin/cs
--debug
---macro include('tests.issues')
---macro include('tests.unit')
-
---next
--cp src
--main TestAll
--lib utest
--D dump
--neko bin/neko.n
 -debug
 --macro include('tests.issues')
 --macro include('tests.unit')
